@@ -1,14 +1,11 @@
 {
-  "name": "@uni-cli/cli",
+  "name": "@uni-cli/get-npm-info",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "TanRongFei <731429927@qq.com>",
   "homepage": "https://github.com/JokerTar/uni-cli#readme",
   "license": "ISC",
   "main": "lib/index.js",
-  "bin": {
-    "uni": "bin/index.js"
-  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -30,12 +27,7 @@
     "url": "https://github.com/JokerTar/uni-cli/issues"
   },
   "dependencies": {
-    "@uni-cli/get-npm-info": "file:../../utils/get-npm-info",
-    "@uni-cli/log": "file:../../utils/log",
-    "import-local": "^3.0.3",
-    "path-exists": "^4.0.0",
-    "root-check": "^1.0.0",
-    "semver": "^7.3.5",
-    "user-home": "^3.0.0"
+    "axios": "^0.24.0",
+    "semver": "^7.3.5"
   }
 }
