@@ -10,7 +10,7 @@ function getNpmInfo(npmName, register = setting.BASE_REGISTRY) {
   if (!npmName) return null
 
   const npmInfoUrl = path.join(register, npmName)
-  console.log(npmInfoUrl)
+  console.log(npmInfoUrl, 'here')
 
   return  axios.get(npmInfoUrl).then(res => {
     if (res.status === 200) {
