@@ -1,6 +1,6 @@
 {
   "name": "@uni-cli/get-npm-info",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "TanRongFei <731429927@qq.com>",
   "homepage": "https://github.com/JokerTar/uni-cli#readme",
@@ -29,5 +29,6 @@
   "dependencies": {
     "axios": "^0.24.0",
     "semver": "^7.3.5"
-  }
+  },
+  "gitHead": "ac58760fe6babe8a11696c5338361c3ced23ac48"
 }
