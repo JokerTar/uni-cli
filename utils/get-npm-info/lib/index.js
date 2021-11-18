@@ -4,7 +4,10 @@ const path = require('path')
 const semver = require('semver')
 const axios = require('axios')
 
-const setting = require('../../../setting')
+const setting = {
+  BASE_REGISTRY: 'https://registry.npmjs.org',
+  TAOBAO_REGISTRY: 'https://registry.npm.taobao.org'
+}
 
 function getNpmInfo(npmName, register = setting.BASE_REGISTRY) {
   if (!npmName) return null

@@ -10,7 +10,10 @@ const rootCheck = require('root-check')
 const log = require('@uni-cli/log')
 const { getNpmInfoVersions } = require('@uni-cli/get-npm-info')
 
-const setting = require('../../../setting')
+const setting = {
+  LOWEST_NODE_VERSION: '12.0.0',
+  DEFAULT_CLI_HOME_PATH: '.uni-cli'
+}
 
 async function core() {
   try {
