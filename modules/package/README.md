@@ -1,11 +1,11 @@
-# `@uni-cli/package`
+# `@uni-cli/index`
 
 > TODO: description
 
 ## Usage
 
 ```
-const package = require('@uni-cli/package');
+const index = require('@uni-cli/index');
 
 // TODO: DEMONSTRATE API
 ```

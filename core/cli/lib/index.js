@@ -110,6 +110,9 @@ async function checkGlobUpdate() {
   const currentVersion = pkg.version
   const npmName = pkg.name
   const latestVersion = await getLatestVersion(npmName)
+  process.env.CLI_LATEST_VERSION = latestVersion
+  process.env.CLI_CURRENT_VERSION = currentVersion
+
   if (!semver.gte(currentVersion, latestVersion)) {
     log.warn(`请手动更新 ${npmName}, 当前版本 ${currentVersion}, 最新版本 ${latestVersion}`)
   }

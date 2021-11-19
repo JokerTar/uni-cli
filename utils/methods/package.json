@@ -25,5 +25,7 @@
   },
   "bugs": {
     "url": "https://github.com/JokerTar/uni-cli/issues"
+  },
+  "dependencies": {
   }
 }

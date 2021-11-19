@@ -5,7 +5,7 @@
   "author": "JokerTar <731429927@qq.com>",
   "homepage": "https://github.com/JokerTar/uni-cli#readme",
   "license": "ISC",
-  "main": "lib/package.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -25,5 +25,11 @@
   },
   "bugs": {
     "url": "https://github.com/JokerTar/uni-cli/issues"
+  },
+  "dependencies": {
+    "@uni-cli/methods": "file:../../utils/methods",
+    "fs-extra": "^10.0.0",
+    "npminstall": "^4.11.0",
+    "path-exists": "^4.0.0"
   }
 }

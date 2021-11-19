@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "user-home": "^3.0.0",
-    "@uni-cli/log": "file:../../utils/log"
+    "@uni-cli/log": "file:../../utils/log",
+    "@uni-cli/package": "file:../../modules/package"
   }
 }

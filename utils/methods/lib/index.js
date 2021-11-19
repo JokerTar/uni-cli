@@ -11,6 +11,11 @@ function formatPath(p) {
   return p
 }
 
+function isObject(o) {
+  return Object.prototype.toString.call(o) === '[object Object]'
+}
+
 module.exports = {
-  formatPath
+  formatPath,
+  isObject
 }
