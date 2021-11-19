@@ -12,7 +12,8 @@ const setting = {
 function getNpmInfo(npmName = '@uni-cli/cli', register = setting.BASE_REGISTRY) {
   if (!npmName) return null
 
-  let npmInfoUrl = urlJoin(setting.TAOBAO_REGISTRY, npmName)
+  let npmInfoUrl = urlJoin(register, npmName)
+  console.log(npmInfoUrl)
 
   return  axios.get(npmInfoUrl).then(res => {
     if (res.status === 200) {
@@ -48,6 +49,7 @@ async function getSemverVersion(npmName) {
 
 async function getLatestVersion(npmName) {
   const versions = await getSemverVersion(npmName)
+  console.log(versions)
   if (versions && versions.length) return versions[0]
 
   return null
