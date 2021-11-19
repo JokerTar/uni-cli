@@ -55,7 +55,10 @@ async function exec(source, destination) {
   console.log('pkg', pkg)
   const rootFile = pkg.getRootFilePath();
   console.log('rootFile', rootFile)
-
+  console.log(cmdObj.parent.opts())
+  const argv = Array.from(arguments)
+  const cmdArgv = argv.slice(0, argv.length - 1)
+  require(rootFile)(cmdArgv)
 }
 
 module.exports = exec

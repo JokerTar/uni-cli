@@ -1,7 +1,7 @@
 'use strict';
 
-function init(source, destination) {
-  console.log(source, destination)
+function init(argv) {
+  console.log(argv)
 }
 
 module.exports = init
