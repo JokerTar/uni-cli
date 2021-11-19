@@ -1,18 +1,19 @@
-15 error Error: Command failed with exit code 1: git remote update
-15 error Host key verification failed.
-15 error fatal: Could not read from remote repository.
-15 error
-15 error Please make sure you have the correct access rights
-15 error and the repository exists.
-15 error error: Could not fetch origin
-15 error Auto packing the repository in background for optimum performance.
-15 error See "git help gc" for manual housekeeping.
-15 error warning: There are too many unreachable loose objects; run 'git prune' to remove them.
-15 error Fetching origin
-15 error Nothing new to pack.
-15 error     at makeError (C:\Users\afei\Desktop\uni-cli\node_modules\execa\lib\error.js:60:11)
-15 error     at Function.module.exports.sync (C:\Users\afei\Desktop\uni-cli\node_modules\execa\index.js:194:17)
-15 error     at Object.execSync (C:\Users\afei\Desktop\uni-cli\node_modules\@lerna\child-process\index.js:39:16)
-15 error     at updateRemote (C:\Users\afei\Desktop\uni-cli\node_modules\@lerna\version\lib\is-behind-upstream.js:34:16)
-15 error     at isBehindUpstream (C:\Users\afei\Desktop\uni-cli\node_modules\@lerna\version\lib\is-behind-upstream.js:16:3)
-15 error     at VersionCommand.initialize (C:\Users\afei\Desktop\uni-cli\node_modules\@lerna\version\index.js:153:9)
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js',
+0 silly argv   name: 'init',
+0 silly argv   loc: '@uni-cli/index'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath C:\Users\afei\Desktop\uni-cli
+3 error Error: canceled
+3 error     at Interface.<anonymous> (C:\Users\afei\Desktop\uni-cli\node_modules\read\lib\read.js:66:13)
+3 error     at Interface.emit (events.js:310:20)
+3 error     at Interface._ttyWrite (readline.js:893:16)
+3 error     at ReadStream.onkeypress (readline.js:198:10)
+3 error     at ReadStream.emit (events.js:310:20)
+3 error     at emitKeys (internal/readline/utils.js:438:14)
+3 error     at emitKeys.next (<anonymous>)
+3 error     at ReadStream.onData (readline.js:1160:36)
+3 error     at ReadStream.emit (events.js:310:20)

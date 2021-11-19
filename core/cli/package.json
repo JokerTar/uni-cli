@@ -30,8 +30,12 @@
     "url": "https://github.com/JokerTar/uni-cli/issues"
   },
   "dependencies": {
+    "@uni-cli/exec": "file:../exec",
     "@uni-cli/get-npm-info": "file:../../utils/get-npm-info",
+    "@uni-cli/init": "file:../../commands/init",
     "@uni-cli/log": "file:../../utils/log",
+    "commander": "^8.3.0",
+    "dotenv": "^10.0.0",
     "import-local": "^3.0.3",
     "path-exists": "^4.0.0",
     "root-check": "^1.0.0",
