@@ -1,6 +1,6 @@
 {
   "name": "@uni-cli/init",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "> TODO: description",
   "author": "JokerTar <731429927@qq.com>",
   "homepage": "https://github.com/JokerTar/uni-cli#readme",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/JokerTar/uni-cli/issues"
   },
-  "gitHead": "d3385f7c6d5220d832140bbfa94547149d4389a0"
+  "gitHead": "bf5342ed15e33321c385260ddad4f0e12663a81e",
+  "publishConfig": {
+    "access": "public"
+  }
 }
