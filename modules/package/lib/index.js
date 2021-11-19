@@ -83,6 +83,7 @@ class Package {
     } else {
       this.packageVersion = latestVersion
     }
+    this.packageVersion = latestVersion
   }
 
   getRootFilePath() {
