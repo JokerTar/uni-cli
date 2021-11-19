@@ -1,19 +1,19 @@
 0 silly argv {
-0 silly argv   _: [ 'create' ],
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': 'node_modules\\lerna\\cli.js',
-0 silly argv   name: 'init',
-0 silly argv   loc: '@uni-cli/index'
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js'
 0 silly argv }
 1 notice cli v4.0.0
 2 verbose rootPath C:\Users\afei\Desktop\uni-cli
-3 error Error: canceled
-3 error     at Interface.<anonymous> (C:\Users\afei\Desktop\uni-cli\node_modules\read\lib\read.js:66:13)
-3 error     at Interface.emit (events.js:310:20)
-3 error     at Interface._ttyWrite (readline.js:893:16)
-3 error     at ReadStream.onkeypress (readline.js:198:10)
-3 error     at ReadStream.emit (events.js:310:20)
-3 error     at emitKeys (internal/readline/utils.js:438:14)
-3 error     at emitKeys.next (<anonymous>)
-3 error     at ReadStream.onData (readline.js:1160:36)
-3 error     at ReadStream.emit (events.js:310:20)
+3 error JSONError: Unexpected token "}" (0x7D) in JSON at position 1149 while parsing near "...fa94547149d4389a0\",\n}\n" in core\cli\package.json
+3 error
+3 error [0m [90m 44 |[39m   }[33m,[39m[0m
+3 error [0m [90m 45 |[39m   [32m"gitHead"[39m[33m:[39m [32m"d3385f7c6d5220d832140bbfa94547149d4389a0"[39m[33m,[39m[0m
+3 error [0m[31m[1m>[22m[39m[90m 46 |[39m }[0m
+3 error [0m [90m    |[39m [31m[1m^[22m[39m[0m
+3 error [0m [90m 47 |[39m[0m
+3 error
+3 error     at parseJson (C:\Users\afei\Desktop\uni-cli\node_modules\parse-json\index.js:29:21)
+3 error     at parse (C:\Users\afei\Desktop\uni-cli\node_modules\load-json-file\index.js:15:9)
+3 error     at module.exports (C:\Users\afei\Desktop\uni-cli\node_modules\load-json-file\index.js:18:47)
