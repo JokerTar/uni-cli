@@ -10,7 +10,7 @@ const log = require("@uni-cli/log")
 
 const CACHE_PATH = 'dependencies'
 const SETTING = {
-  init: '@uni-cli/cli'
+  init: '@uni-cli/init'
 }
 
 async function exec(source, destination) {
