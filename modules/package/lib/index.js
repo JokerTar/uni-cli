@@ -44,9 +44,8 @@ class Package {
 
   // 判断当前Package是否存在
   async exists() {
-    console.log('here')
-    console.log(this.cacheFilePath(this.packageVersion))
     if (this.storeDir) {
+      await this.prepare()
       return await pathExists(this.cacheFilePath(this.packageVersion))
     } else {
       return await pathExists(this.targetPath)
@@ -54,8 +53,6 @@ class Package {
   }
 
   async install() {
-    console.log('install...')
-    console.log({name: this.packageName, version: this.packageVersion})
     await this.prepare()
     await npminstall({
       root: this.targetPath,
@@ -68,12 +65,11 @@ class Package {
   }
 
   async update() {
-    console.log('update...')
     // 获取最新版本号
     const latestVersion = await getLatestVersion(this.packageName)
     const currentVersion = this.packageVersion
     // 查询本地缓存中是否存在最新版本
-    const flag = pathExists(this.cacheFilePath(latestVersion))
+    const flag = await pathExists(this.cacheFilePath(latestVersion))
     if (!flag) {
       await npminstall({
         root: this.targetPath,

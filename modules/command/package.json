@@ -1,6 +1,6 @@
 {
-  "name": "@uni-cli/init",
-  "version": "1.0.6",
+  "name": "@uni-cli/command",
+  "version": "1.0.11",
   "description": "> TODO: description",
   "author": "JokerTar <731429927@qq.com>",
   "homepage": "https://github.com/JokerTar/uni-cli#readme",
@@ -13,6 +13,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JokerTar/uni-cli.git"
@@ -23,21 +26,7 @@
   "bugs": {
     "url": "https://github.com/JokerTar/uni-cli/issues"
   },
-  "gitHead": "bf5342ed15e33321c385260ddad4f0e12663a81e",
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
-    "@uni-cli/command": "file:../../modules/command",
-    "@uni-cli/log": "file:../../utils/log",
-    "@uni-cli/package": "file:../../modules/package",
-    "@uni-cli/methods": "file:../../utils/methods",
-    "ejs": "^3.1.6",
-    "fs-extar": "^0.0.1-security",
-    "glob": "^7.2.0",
-    "inquirer": "^8.2.0",
-    "npminstall": "^4.0.0",
-    "semver": "^4.3.6",
-    "user-home": "^3.0.0"
+    "@uni-cli/log": "file:../../utils/log"
   }
 }
