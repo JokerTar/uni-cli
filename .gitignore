@@ -12,3 +12,4 @@ node_modules/
 *.local
 
 lerna-debug.index
+lerna-debug.log
