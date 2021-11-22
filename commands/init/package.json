@@ -1,6 +1,6 @@
 {
   "name": "@uni-cli/init",
-  "version": "1.0.6",
+  "version": "1.0.12",
   "description": "> TODO: description",
   "author": "JokerTar <731429927@qq.com>",
   "homepage": "https://github.com/JokerTar/uni-cli#readme",
@@ -30,8 +30,8 @@
   "dependencies": {
     "@uni-cli/command": "file:../../modules/command",
     "@uni-cli/log": "file:../../utils/log",
-    "@uni-cli/package": "file:../../modules/package",
     "@uni-cli/methods": "file:../../utils/methods",
+    "@uni-cli/package": "file:../../modules/package",
     "ejs": "^3.1.6",
     "fs-extar": "^0.0.1-security",
     "glob": "^7.2.0",
