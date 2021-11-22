@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@uni-cli/methods": "file:../../utils/methods",
+    "@uni-cli/get-npm-info": "file:../../utils/get-npm-info",
     "fs-extra": "^10.0.0",
     "npminstall": "^4.11.0",
     "path-exists": "^4.0.0"

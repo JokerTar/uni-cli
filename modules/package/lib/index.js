@@ -5,7 +5,7 @@ const pathExists = require('path-exists')
 const fse = require('fs-extra')
 const pkgDir = require('pkg-dir').sync
 const npminstall = require('npminstall')
-
+const { getLatestVersion } = require('@uni-cli/get-npm-info')
 const { isObject } = require('@uni-cli/methods')
 
 class Package {
@@ -35,6 +35,10 @@ class Package {
     if (this.storeDir) {
       const flag = await pathExists(this.storeDir)
       if (!flag) fse.mkdirpSync(this.storeDir)
+    }
+
+    if (this.packageVersion === 'latest') {
+      this.packageVersion = await getLatestVersion(this.packageName)
     }
   }
 
@@ -66,7 +70,7 @@ class Package {
   async update() {
     console.log('update...')
     // 获取最新版本号
-    const latestVersion = process.env.CLI_LATEST_VERSION
+    const latestVersion = await getLatestVersion(this.packageName)
     const currentVersion = this.packageVersion
     // 查询本地缓存中是否存在最新版本
     const flag = pathExists(this.cacheFilePath(latestVersion))
