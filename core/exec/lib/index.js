@@ -17,7 +17,7 @@ async function exec(source, destination) {
   let targetPath = process.env.CLI_TARGET_PATH
   const homePath = path.resolve(userHome, process.env.CLI_HOME_PATH)
   let storeDir = ''
-  const version = process.env.CLI_CURRENT_VERSION
+  const version = 'latest'
   let pkg = null
 
   log.verbose('targetPath:', targetPath)
